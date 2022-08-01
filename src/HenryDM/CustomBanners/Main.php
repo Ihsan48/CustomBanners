@@ -109,7 +109,7 @@ class Main extends PluginBase implements Listener {
         $colortag = '§'.$this->colortags[strtoupper($color)];
         $form->setTitle("§l§8BANNER CREATION");
         $form->setContent(self::getTranslation("Select_pattern"));
-        if($all !== false) $form->addButton("Done"));
+        if($all !== false) $form->addButton("Done");
         foreach($this->items as $item){
             $form->addButton($item);
         }
