@@ -107,9 +107,9 @@ class Main extends PluginBase implements Listener {
             }
         });
         $colortag = '§'.$this->colortags[strtoupper($color)];
-        $form->setTitle(str_replace("{x}", $colortag.$color.'§r', self::getTranslation("Creating_banner")));
+        $form->setTitle("§l§8BANNER CREATION");
         $form->setContent(self::getTranslation("Select_pattern"));
-        if($all !== false) $form->addButton(self::getTranslation("Done"));
+        if($all !== false) $form->addButton("Done"));
         foreach($this->items as $item){
             $form->addButton($item);
         }
