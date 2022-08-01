@@ -130,8 +130,8 @@ class Main extends PluginBase implements Listener {
             return;
         });
         $colortag = '§'.$this->colortags[strtoupper($color)];
-        $form->setTitle(str_replace("{x}", $colortag.$color.'§r', self::getTranslation("Creating_banner")));
-        $form->setContent(str_replace("{x}", $this->items[$pattern], self::getTranslation("Choose_color")));
+        $form->setTitle("§l§8BANNER CREATION");
+        $form->setContent("Choose a color:");
         foreach($this->colors as $item){
             $form->addButton('§'.$this->colortags[$item] . ucfirst(strtolower(str_replace('_', ' ', $item))));
         }
