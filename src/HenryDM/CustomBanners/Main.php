@@ -23,6 +23,7 @@ class Main extends PluginBase implements Listener {
     public Config $config;
     public Config $playerdata;
     public $patterns = [];
+    public $color;
 
     public function onEnable(): void{
         $this->patterns = ['gra', 'gru', 'bri', 'hh','hhb','vh','vhr','ts','bs','ls','rs','ld','rud','lud','rd','cr','dls','drs','sc','cs','ms','tl','bl','tr','br','tt','bt','mr','mc','bts','tts','ss','bo','cbo','flo','cre','sku','moj'];
